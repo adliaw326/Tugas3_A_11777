@@ -75,8 +75,7 @@ if uploaded_file is not None:
     st.dataframe(input_data)
 
     # Load the model
-    model_directory = r"d:\Matakuliah Semester 5\Pembelajaran Mesin dan Pembelajaran Mendalam\Supervised Learning\Model Suprevised Learning (Praktek)\Tugas3_A_11777"
-    model_path = os.path.join(model_directory, r'SVR_IPK_model.pkl')
+    model_path = 'SVR_IPK_model.pkl'
 
     if os.path.exists(model_path):
         with open(model_path, 'rb') as f:
